@@ -1,0 +1,36 @@
+@mixin button( $style, $color ) {
+
+	cursor: pointer;
+	font-family: $buttonFont;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 16px 32px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+
+	@if 'primary' == $style {
+		background-color: $color;
+		border: 0;
+		color: $white;
+
+		&:hover {
+			background-color: darken( $color, 10% );
+		}
+
+	} @else {
+		background-color: $color;
+		border: 1px solid $white;
+		color: $white;
+
+		&:hover {
+			background-color: $white;
+			border: 1px solid $color;
+			color: $color!important;
+		}
+	}
+
+}

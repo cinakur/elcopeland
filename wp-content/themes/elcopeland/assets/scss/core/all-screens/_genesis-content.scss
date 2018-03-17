@@ -1,0 +1,35 @@
+.breadcrumb {
+	background-color: $breadcrumbBackground;
+	font-family: $headingFont;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 1px;
+	padding: 15px;
+
+  i {
+    margin: 0 10px;
+  }
+
+}
+
+.after-entry,
+.archive-description,
+.author-box {
+	background-color: $genesisContentBoxesBackground;
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin-bottom: 40px;
+	padding: 40px;
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+	margin-bottom: 0;
+}
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+	font-size: 28px;
+	font-size: 2.8rem;
+}

@@ -1,0 +1,25 @@
+.site-inner,
+.wrap {
+	max-width: 1140px;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	width: 920px;
+}
+
+.content,
+.site-header .widget-area {
+	width: 800px;
+}
+
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content,
+.content-sidebar-sidebar .content {
+	width: 580px;
+}
+
+.sidebar-primary {
+	width: 300px;
+}

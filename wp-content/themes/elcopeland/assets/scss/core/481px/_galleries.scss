@@ -1,0 +1,19 @@
+.gallery-item {
+	float: left;
+	margin: 0 0 28px;
+	text-align: center;
+
+	.gallery-columns-2 &,
+	.gallery-columns-4 & {
+		width: 50%;
+	}
+
+	.gallery-columns-3 &,
+	.gallery-columns-5 &,
+	.gallery-columns-7 &,
+	.gallery-columns-8 &,
+	.gallery-columns-9 & {
+		width: 33%;
+	}
+
+}

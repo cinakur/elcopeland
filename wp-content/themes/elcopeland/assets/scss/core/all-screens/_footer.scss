@@ -1,0 +1,40 @@
+.footer-widgets {
+	background-color: $footerWidgetsBackground;
+	color: $footerWidgetsColor;
+	font-size: 18px;
+	font-size: 1.8rem;
+	clear: both;
+	padding: 60px 0;
+
+	.widget {
+		background: none;
+		padding: 0;
+	}
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+	float: left;
+	width: 100%;
+	margin: 0;
+}
+
+.site-footer {
+	background-color: $footerBackground;
+	color: $footerColor;
+	font-family: $headingFont;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1;
+	padding: 40px 0;
+	text-align: center;
+
+	p {
+		margin-bottom: 10px;
+	}
+
+	a {
+		color: $footerLinkColor;
+	}
+}

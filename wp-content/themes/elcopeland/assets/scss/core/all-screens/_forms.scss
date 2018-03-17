@@ -1,0 +1,230 @@
+body {
+
+	form {
+			font-family: $headingFont;
+	}
+
+	.required {
+		color: $red;
+	}
+
+	input,
+	select,
+	textarea,
+	.gform_wrapper input[type=email],
+	.gform_wrapper input[type=number],
+	.gform_wrapper input[type=password],
+	.gform_wrapper input[type=tel],
+	.gform_wrapper input[type=text],
+	.gform_wrapper textarea,
+	.gform_wrapper input[type=url] {
+		background-color: $inputBackground;
+		border: 1px solid $inputBorder;
+		border-radius: 0!important;
+		color: $inputColor;
+		font-size: 18px!important;
+		font-size: 1.8rem!important;
+		font-weight: $baseFontWeight;
+		padding: 16px;
+		width: 100%;
+	}
+
+	input:focus,
+	textarea:focus,
+	.gform_wrapper input[type=email]:focus,
+	.gform_wrapper input[type=number]:focus,
+	.gform_wrapper input[type=password]:focus,
+	.gform_wrapper input[type=tel]:focus,
+	.gform_wrapper input[type=text]:focus,
+	.gform_wrapper input[type=url]:focus {
+		border: 1px solid $inputFocus!important;
+		outline: none;
+	}
+
+	input[type="checkbox"],
+	input[type="image"],
+	input[type="radio"] {
+		width: auto;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		position: absolute !important;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		width: 1px;
+		border: 0;
+		overflow: hidden;
+
+		&:checked {
+
+			+label {
+				font-weight: 400!important;
+
+				&::before {
+					content: "\f00c";
+				}
+			}
+		}
+	}
+
+	.subscribe-label {
+		padding-left: 40px!important;
+		padding-top: 7px;
+		line-height: 30px;
+		position: relative;
+
+		&::before {
+			display: inline-block;
+			font: normal normal normal 18px/1 FontAwesome;
+			font-size: 18px;
+			font-size: 1.8rem;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			border: 1px solid $inputBorder;
+			content: '';
+			color: $green;
+			height: 30px;
+			left: 0;
+			line-height: 30px;
+			position: absolute;
+			text-align: center;
+			top: 3px;
+			width: 30px;
+		}
+
+		&:checked {
+
+			+label {
+				font-weight: 400!important;
+
+				&::before {
+					content: "\f00c";
+				}
+			}
+		}
+	}
+
+	input[type="radio"] {
+
+		+label {
+			line-height: 20px;
+			padding-left: 25px!important;
+
+			&::before {
+				border: 1px solid $gray;
+				border-radius: 100%;
+				content: "";
+				display: inline-block;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+			}
+
+		}
+
+		&:checked {
+
+			+label {
+
+					&::before {
+						content: '';
+					}
+
+					&::after {
+						background-color: $green;
+						border-radius: 100%;
+						content: '';
+						display: inline-block;
+						height: 14px;
+						left: 3px;
+						position: absolute;
+						top: 6px;
+						width: 14px;
+					}
+			}
+
+		}
+
+	}
+
+	.gfield {
+			margin: 40px 0 0;
+	}
+
+	.gform_wrapper .gfield_checkbox {
+		color: $inputColor;
+		position: relative;
+
+		label {
+			line-height: 40px!important;
+			margin-left: 0;
+			padding-left: 40px!important;
+
+			&::before {
+				display: inline-block;
+				font: normal normal normal 18px/1 FontAwesome;
+				font-size: 18px;
+				font-size: 1.8rem;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+
+				border: 1px solid $inputBorder;
+				content: '';
+				color: $green;
+				height: 30px;
+				left: 0;
+				line-height: 30px;
+				position: absolute;
+				text-align: center;
+				top: 3px;
+				width: 30px;
+			}
+		}
+	}
+
+	::-moz-placeholder {
+		color: $inputDefault;
+		opacity: 1;
+	}
+
+	::-webkit-input-placeholder {
+		color: $inputDefault;
+	}
+
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.button {
+
+		@include button( 'primary', $green );
+
+		&.secondary {
+			@include button( 'secondary', $green );
+		}
+
+		&.small {
+			padding: 8px 16px;
+		}
+
+		&.large {
+			font-size: 22px;
+			font-size: 2.2rem;
+			padding: 20px 28px;
+		}
+	}
+
+	.button {
+		display: inline-block;
+	}
+
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]::-webkit-search-results-button {
+		display: none;
+	}
+}

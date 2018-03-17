@@ -1,0 +1,119 @@
+.entry-title {
+	font-size: 36px;
+	font-size: 3.6rem;
+
+	a {
+		color: $headingColor;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $linkHover;
+		}
+	}
+}
+
+.featured-content .entry {
+	background: none;
+	padding: 0;
+}
+
+.featured-content .entry:last-of-type {
+	margin-bottom: 0;
+}
+
+.featured-content .entry-title {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.entry {
+	background-color: $contentBackground;
+	margin-bottom: 40px;
+	padding: 3.75%;
+}
+
+.entry-content {
+
+	ol,
+	ul {
+		margin-bottom: 28px;
+		margin-left: 40px;
+
+		ol,
+		ul {
+			margin-bottom: 0;
+		}
+	}
+
+	ol > li {
+		list-style-type: decimal;
+	}
+
+	ul > li {
+		list-style-type: none;
+		margin-bottom: 10px;
+		position: relative;
+
+		&::before {
+			background-color: $accentColorLight;
+			border-radius: 100%;
+			border: 2px solid $white;
+			content: '';
+			height: 10px;
+			left: -22px;
+			position: absolute;
+			top: 1rem;
+			width: 10px;
+			z-index: 10;
+		}
+
+		&::after {
+			background-color: $accentColor;
+			border-radius: 100%;
+			content: '';
+			height: 14px;
+			left: -24px;
+			position: absolute;
+			top: .8rem;
+			width: 14px;
+			z-index: 8;
+		}
+	}
+
+	code {
+		background-color: $lightGray;
+		color: $black;
+	}
+}
+
+p.entry-meta {
+	font-family: $headingFont;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+	margin-top: -10px;
+}
+
+.entry-header .entry-meta {
+	margin-bottom: 24px;
+}
+
+.entry-footer .entry-meta {
+	border-top: 1px solid $lightGray;
+	padding-top: 24px;
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+#wpstats {
+	display: none;
+}

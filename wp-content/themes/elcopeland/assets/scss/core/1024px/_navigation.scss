@@ -1,0 +1,182 @@
+.site-header nav {
+		text-align: right;
+
+		.menu-item {
+			background-color: none;
+			position: relative;
+
+			a {
+				background-color: $black;
+				border: none;
+				color: $headerNavLinkColor;
+				font-size: 16px;
+				font-size: 1.6rem;
+				font-weight: 700;
+
+				&:hover {
+					background-color: $black;
+					color: $headerNavLinkHoverColor;
+				}
+			}
+
+			.sub-menu {
+
+				a {
+					background-color: $green;
+					border: none;
+					color: $white;
+					font-size: 16px;
+					font-size: 1.6rem;
+					font-weight: 700;
+					padding-left: 20px;
+
+					&:hover {
+						background-color: darken($green, 10%);
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+
+.genesis-nav-menu {
+	clear: both;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1;
+	width: 100%;
+}
+
+.genesis-nav-menu .menu-item {
+	display: inline-block;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: left;
+
+	&.cta a {
+		background-color: $green;
+		color: $white;
+
+		&:hover {
+			background-color: darken( $green, 5% );
+		}
+	}
+}
+
+.genesis-nav-menu .menu-item a {
+	text-decoration: none;
+	display: block;
+	padding: 30px 20px;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+	color: #c3251d;
+	text-decoration: underline;
+}
+
+.genesis-nav-menu .sub-menu {
+	left: -9999px;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition:    opacity .4s ease-in-out;
+	-ms-transition:     opacity .4s ease-in-out;
+	-o-transition:      opacity .4s ease-in-out;
+	transition:         opacity .4s ease-in-out;
+	width: 200px;
+	z-index: 110;
+}
+
+.genesis-nav-menu .sub-menu a {
+	background-color: #fff;
+	border-top: 0;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 0;
+	padding: 20px;
+	position: relative;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -56px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+	padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+	float: right;
+}
+
+.js nav.nav-primary,
+.js .site-header nav  {
+	display: block;
+	position: inherit;
+}
+
+.menu-toggle,
+.sub-menu-toggle {
+	display: none;
+}
+
+.menu-item-has-children {
+
+	> a {
+		position: relative!important;
+
+		&::before {
+			content: "\f107";
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			position: absolute;
+			right: 0;
+			top: 30px;
+			z-index: 100;
+		}
+
+		.sub-menu & {
+			&::before {
+				content:"\f105";
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+
+				position: absolute;
+				right: 15px;
+				top: 20px;
+				z-index: 100;
+			}
+		}
+
+	}
+	
+}

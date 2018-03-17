@@ -1,0 +1,36 @@
+/*!
+ * Theme Name:          El Copeland 
+ * Theme URI:           https://elcopeland.com
+ * Description:         Child theme for Genesis Framework built for funsies for Elizabeth Copeland's personal site
+ * Author:              LimeCuda | Elizabeth
+ * Author URI:          https://elcopeland.com
+ * Version:             1.0.0
+ * Template:            genesis
+ * Template Version:    2.5.3
+ */
+
+@import "mixins/mixins";
+@import "globals";
+@import "core/reset";
+@import "core/all-screens/all-screens";
+@import "theme/all-screens/all-screens";
+
+@media only screen and (min-width: $smallScreen) {
+	@import "core/481px/481px";
+	@import "theme/481px/481px";
+}
+
+@media only screen and (min-width: $mediumScreen) {
+	@import "core/769px/769px";
+	@import "theme/769px/769px";
+}
+
+@media only screen and (min-width: $largeScreen) {
+	@import "core/1024px/1024px";
+	@import "theme/1024px/1024px";
+}
+
+@media only screen and (min-width: $xlargeScreen) {
+	@import "core/1201px/1201px";
+	@import "theme/1201px/1201px";
+}

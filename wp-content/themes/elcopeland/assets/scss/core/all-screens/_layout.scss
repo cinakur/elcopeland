@@ -1,0 +1,53 @@
+.site-inner,
+.wrap {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.site-inner {
+	clear: both;
+	padding-top: 40px;
+	word-wrap: break-word;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	float: left;
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	float: right;
+}
+
+.content {
+	float: right;
+	max-width: 100%;
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+	float: left;
+}
+
+.full-width-content .content {
+	width: 100%;
+}
+
+.sidebar-primary {
+	float: left;
+	width: 100%;
+}
+
+.sidebar-content .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	float: left;
+}
+
+.sidebar-secondary {
+	float: left;
+}
+
+.content-sidebar-sidebar .sidebar-secondary {
+	float: right;
+}

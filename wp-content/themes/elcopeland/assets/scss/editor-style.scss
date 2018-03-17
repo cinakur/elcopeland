@@ -1,0 +1,42 @@
+@import "globals";
+@import "core/all-screens/typography";
+
+body {
+	background-color: $white;
+}
+
+ul {
+	margin-bottom: 28px;
+	margin-left: 40px;
+}
+
+ul > li {
+	list-style-type: none;
+	margin-bottom: 10px;
+	position: relative;
+
+	&::before {
+		background-color: $accentColorLight;
+		border-radius: 100%;
+		border: 2px solid $white;
+		content: '';
+		height: 10px;
+		left: -22px;
+		position: absolute;
+		top: 1rem;
+		width: 10px;
+		z-index: 10;
+	}
+
+	&::after {
+		background-color: $accentColor;
+		border-radius: 100%;
+		content: '';
+		height: 14px;
+		left: -24px;
+		position: absolute;
+		top: .8rem;
+		width: 14px;
+		z-index: 8;
+	}
+}
