@@ -41,7 +41,7 @@
 		.menu-item {
 
 			a {
-				background-color: $black;
+				background-color: $color2;
 				color: $headerNavLinkColor;
 				font-size: 18px;
 				font-size: 1.8rem;
@@ -54,14 +54,14 @@
 			.sub-menu {
 
 				a {
-					background-color: $black;
+					background-color: $color2;
 					font-size: 18px;
 					font-size: 1.8rem;
 					font-weight: 300;
 					padding-left: 30px;
 
 					&:hover {
-						background-color: lighten( $black, 5% );
+						background-color: lighten( $color2, 5% );
 						color: $white;
 					}
 				}
@@ -109,10 +109,10 @@
 		width: 100%;
 
 		.menu-item a {
-			border-bottom: 1px solid lighten( $black, 5% );
-			border-top: 1px solid darken( $black, 5% );
+			border-bottom: 1px solid lighten( $color2, 5% );
+			border-top: 1px solid darken( $color2, 5% );
 			font-family: $headerNavFont;
-			background-color: $black;
+			background-color: $color2;
 			text-decoration: none;
 
 			&:hover{
@@ -215,7 +215,7 @@
 }
 
 .menu-toggle {
-	background-color: $green;
+	background-color: $color5;
 	color: $white!important;
 	line-height: 40px;
 	float: right;
@@ -230,7 +230,7 @@
 
 	&:hover,
 	&:active {
-		background-color: darken( $green, 5% );
+		background-color: darken( $color5, 5% );
 	}
 
 }
