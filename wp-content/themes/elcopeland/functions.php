@@ -34,7 +34,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		}
 	}
 
-	wp_enqueue_style( 'load-fonts', '//fonts.googleapis.com/css?family=Merriweather|Playfair+Display:400i', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'load-fonts', 'https://fonts.googleapis.com/css?family=BioRhyme|Lato|Montserrat', array(), CHILD_THEME_VERSION );
 
 }
 
