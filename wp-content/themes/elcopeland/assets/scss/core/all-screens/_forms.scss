@@ -85,7 +85,7 @@ body {
 
 			border: 1px solid $inputBorder;
 			content: '';
-			color: $green;
+			color: $color3;
 			height: 30px;
 			left: 0;
 			line-height: 30px;
@@ -175,7 +175,7 @@ body {
 
 				border: 1px solid $inputBorder;
 				content: '';
-				color: $green;
+				color: $color5;
 				height: 30px;
 				left: 0;
 				line-height: 30px;
@@ -202,10 +202,10 @@ body {
 	input[type="submit"],
 	.button {
 
-		@include button( 'primary', $green );
+		@include button( 'primary', $color3 );
 
 		&.secondary {
-			@include button( 'secondary', $green );
+			@include button( 'secondary', $color3 );
 		}
 
 		&.small {
