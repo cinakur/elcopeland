@@ -43,13 +43,19 @@
 			background-image: url(images/logo.svg);
 			background-position: center center!important;
 			background-repeat: no-repeat;
+			background-color: $color2;
+			border: solid 3px #565656;
+			border-radius: 100%;
 			float: left;
-			min-height: 43px;
-			width: 159px;
-			fill: $color2;
+			height: 10rem;
+			left: 10rem;
+			position: absolute;
+			top: 5rem;
+			width: 10rem;
+
 		}
 	}
-	.svg-logo {
-
+	#svg-logo {
+		fill: $color3;
 	}
 }
