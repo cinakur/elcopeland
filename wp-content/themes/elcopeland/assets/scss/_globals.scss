@@ -57,8 +57,8 @@ $linkColor: $color5;
 $linkHover: $color3;
 
 //* Navigation
-$headerNavFont: $headingFont;
-$headerNavBackground: $contentBackground;
+$headerNavFont: $white;
+$headerNavBackground: $color2;
 $headerNavLinkColor: $white;
 $headerNavLinkHoverBackground: $contentBackground;
 $headerNavLinkHoverColor: $color5;
@@ -67,7 +67,7 @@ $headerNavSubColor: $white;
 $headerNavSubHoverBackground: darken( $headerNavSubBackground, 10% );
 $headerNavSubHoverColor: $white;
 
-$primaryNavBackground: $color5;
+$primaryNavBackground: $headerNavBackground;
 $primaryNavLinkColor: $white;
 $primaryNavLinkHoverBackground: $color4;
 $primaryNavLinkHoverColor: $color3;
@@ -76,10 +76,10 @@ $primaryNavSubColor: $color3;
 $primaryNavSubHoverBackground: darken( $primaryNavSubBackground, 10% );
 $primaryNavSubHoverColor: $white;
 
-$footerNavBackground: $color5;
+$footerNavBackground: $headerNavBackground;
 $footerNavLinkColor: $white;
-$footerNavLinkHoverBackground: $color5;
-$footerNavLinkHoverColor: $color4;
+$footerNavLinkHoverBackground: $headerNavBackground;
+$footerNavLinkHoverColor: $color5;
 
 //* Forms
 $inputBackground: $white;
@@ -108,8 +108,8 @@ $genesisContentBoxesBackground: $white;
 // Footer
 $footerBackground: $color5;
 $footerColor: $white;
-$footerLinkColor: $color3;
-$footerWidgetsBackground: $color4;
+$footerLinkColor: $white;
+$footerWidgetsBackground: $footerBackground;
 $footerWidgetsColor: $white;
 
 $baseFontWeight: 400;
