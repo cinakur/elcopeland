@@ -18,7 +18,7 @@
 }
 
 .site-header .widget {
-	background-color: $black;
+	background-color: $headerNavBackground;
 }
 
 /* ## Site Header Navigation
@@ -116,7 +116,7 @@
 			text-decoration: none;
 
 			&:hover{
-				background-color: lighten( $black, 5% );
+				background-color: lighten( $headerNavBackground, 5% );
 			}
 		}
 	}
