@@ -88,6 +88,33 @@ function limecuda_blog_breadcrumbs( $args ) {
 	return $args;
 
 }
+//
+//*
+//*
+//Adding all CPTUI post types to the archives.
+//This example requires Custom Post Type UI 1.3.0+ due to cptui_get_post_type_slugs() function.
+// from https://docs.pluginize.com/article/17-post-types-in-category-tag-archives
+
+function my_cptui_add_post_types_to_archives( $query ) {
+	// We do not want unintended consequences.
+	if ( is_admin() || ! $query->is_main_query() ) {
+		return;    
+	}
+
+	if ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+		$cptui_post_types = cptui_get_post_type_slugs();
+
+		$query->set(
+			'post_type',
+			array_merge(
+				array( 'post' ),
+				$cptui_post_types
+			)
+		);
+	}
+}
+add_filter( 'pre_get_posts', 'my_cptui_add_post_types_to_archives' );
+
 
 // Allow shortcodes to be used in sidebar widgets.
 add_filter( 'widget_text', 'do_shortcode' );
