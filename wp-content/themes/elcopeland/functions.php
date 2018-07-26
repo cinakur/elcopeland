@@ -141,3 +141,17 @@ function limecuda_footer_creds_text() {
 
 <?php
 }
+
+//Add color presets for Beaver Builder
+function my_builder_color_presets( $colors ) {
+    $colors = array();
+      
+      $colors[] = '565656';
+      $colors[] = '73628a';
+      $colors[] = '7b9e87';
+      $colors[] = 'd7cec7';
+      $colors[] = 'fdfffc';
+  
+    return $colors;
+}
+add_filter( 'fl_builder_color_presets', 'my_builder_color_presets' );
